@@ -27,9 +27,9 @@ export const fetchUserById = createAsyncThunk(
 
 export const createUser = createAsyncThunk(
   "users/createUser",
-  async (userData) => {
+  async (userData , {dispatch}) => {
     const response = await axios.post(API_URL + "/user/createuser", userData);
-
+    dispatch(fetchAllUsers);
     return response.data;
   }
 );
