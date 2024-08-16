@@ -8,10 +8,10 @@
 
 Follow the steps below to set up and run the project on your local machine:
 
-### 1. Clone the Repository
+### 1. Clone the Repository and Start the Development 
 
 ```bash
-git clone https://github.com/yourusername/user-management-crud.git
+git clone https://github.com/Sau0908/User-Management-CRUD-MERN.git
 cd user-management-crud
 
 ### 2. Intalling the Dependices
