@@ -13,7 +13,7 @@ const AllUser = () => {
 
   useEffect(() => {
     dispatch(fetchAllUsers());
-  }, [dispatch]);
+  }, []);
 
   if (status === "loading") return <LoadingShimmerUI />;
   if (status === "failed")
