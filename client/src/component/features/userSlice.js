@@ -29,7 +29,7 @@ export const createUser = createAsyncThunk(
   "users/createUser",
   async (userData , {dispatch}) => {
     const response = await axios.post(API_URL + "/user/createuser", userData);
-    dispatch(fetchAllUsers);
+    dispatch(fetchAllUsers());
     return response.data;
   }
 );
@@ -38,7 +38,7 @@ export const updateUser = createAsyncThunk(
   "users/updateUser",
   async ({ id, userData }, { dispatch }) => {
     const response = await axios.post(API_URL + `/user/${id}`, userData);
-    dispatch(fetchAllUsers);
+    dispatch(fetchAllUsers());
     return response.data;
   }
 );
